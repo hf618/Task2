@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game_page</title>
+</head>
+<body>
+       <div  style="text-align:center">
+    <h1>Find the matched person</h1>
+    <form method="GET">
+<img src={{ nam }}+".jpg" alt={{ nam }} onerror="this.src={{ nam }}+".jpg";this.onerror=null"/><br/>
+{#           <img src= {{ nam }}+".jpg", alt= {{ nam }} ><br/>#}
+
+            {% if n1 == nam %}
+            <a href="{{ url_for('judge_r') }}">{{ n1 }}</a><br/>
+            {% else %}
+            <a href="{{ url_for('judge_f') }}">{{ n1 }}</a><br/>
+            {% endif %}
+
+            {% if n2 == nam %}
+            <a href="{{ url_for('judge_r') }}">{{ n2 }}</a><br/>
+            {% else %}
+            <a href="{{ url_for('judge_f') }}">{{ n2 }}</a><br/>
+            {% endif %}
+
+            {% if n3 == nam %}
+             <a href="{{ url_for('judge_r') }}">{{ n3 }}</a><br/>
+            {% else %}
+             <a href="{{ url_for('judge_f') }}">{{ n3 }}</a><br/>
+            {% endif %}
+
+            {% if n4 == nam %}
+            <a href="{{ url_for('judge_r') }}">{{ n4 }}</a>
+            {% else %}
+            <a href="{{ url_for('judge_f') }}">{{ n4 }}</a>
+            {% endif %}
+{#        {% elif nam == "hwang" %}#}
+{#            {% if n1 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n1 }}</a><br/>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n1 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n2 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n2 }}</a><br/>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n2 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n3 == nam %}#}
+{#             <a href="{{ url_for('judge_r') }}">{{ n3 }}</a><br/>#}
+{#            {% else %}#}
+{#             <a href="{{ url_for('judge_f') }}">{{ n3 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n4 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n4 }}</a>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n4 }}</a>#}
+{#            {% endif %}#}
+{#        {% elif nam == "lee" %}#}
+{#            {% if n1 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n1 }}</a><br/>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n1 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n2 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n2 }}</a><br/>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n2 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n3 == nam %}#}
+{#             <a href="{{ url_for('judge_r') }}">{{ n3 }}</a><br/>#}
+{#            {% else %}#}
+{#             <a href="{{ url_for('judge_f') }}">{{ n3 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n4 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n4 }}</a>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n4 }}</a>#}
+{#            {% endif %}#}
+{#        {% elif nam == "ye" %}#}
+{#            {% if n1 == nam %}#}
+{#             <a href="{{ url_for('judge_r') }}">{{ n1 }}</a><br/>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n1 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n2 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n2 }}</a><br/>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n2 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n3 == nam %}#}
+{#             <a href="{{ url_for('judge_r') }}">{{ n3 }}</a><br/>#}
+{#            {% else %}#}
+{#             <a href="{{ url_for('judge_f') }}">{{ n3 }}</a><br/>#}
+{#            {% endif %}#}
+{##}
+{#            {% if n4 == nam %}#}
+{#            <a href="{{ url_for('judge_r') }}">{{ n4 }}</a>#}
+{#            {% else %}#}
+{#            <a href="{{ url_for('judge_f') }}">{{ n4 }}</a>#}
+{#            {% endif %}#}
+{##}
+{#        {% endif %}#}
+
+
+
+{#        {% elif nam == "hwang" %}#}
+{#        <a href="{{ url_for('judge_f') }}">kim</a><br/>#}
+{#        <a href="{{ url_for('judge_r') }}">hwang</a><br/>#}
+{#        <a href="{{ url_for('judge_f') }}">lee</a><br/>#}
+{#        <a href="{{ url_for('judge_f') }}">ye</a>#}
+{#        {% elif nam == "lee" %}#}
+{#        <a href="{{ url_for('judge_f') }}">kim</a><br/>#}
+{#        <a href="{{ url_for('judge_f') }}">hwang</a><br/>#}
+{#        <a href="{{ url_for('judge_r') }}">lee</a><br/>#}
+{#        <a href="{{ url_for('judge_f') }}">ye</a>#}
+{#        {% elif nam == "ye" %}#}
+{#        <a href="{{ url_for('judge_f') }}">kim</a><br/>#}
+{#        <a href="{{ url_for('judge_f') }}">hwang</a><br/>#}
+{#        <a href="{{ url_for('judge_f') }}">lee</a><br/>#}
+{#        <a href="{{ url_for('judge_r') }}">ye</a>#}
+{#        {% endif %}#}
+    </form>
+    </div>
+</body>
+</html>
